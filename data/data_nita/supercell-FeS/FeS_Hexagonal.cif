@@ -1,0 +1,55 @@
+# generated using pymatgen
+data_FeS
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   5.89463920
+_cell_length_b   5.89690108
+_cell_length_c   11.42051442
+_cell_angle_alpha   89.98093386
+_cell_angle_beta   89.96991658
+_cell_angle_gamma   60.01648984
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   FeS
+_chemical_formula_sum   'Fe12 S12'
+_cell_volume   343.85033087
+_cell_formula_units_Z   12
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_type_symbol
+ _atom_type_oxidation_number
+  Fe2+  2.0
+  S2-  -2.0
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Fe2+  Fe0  1  0.92655800  0.67878500  0.62098600  1
+  Fe2+  Fe1  1  0.07303200  0.60554700  0.37899600  1
+  Fe2+  Fe2  1  0.67868800  0.39440200  0.62123900  1
+  Fe2+  Fe3  1  0.39455000  0.92688400  0.62121200  1
+  Fe2+  Fe4  1  0.07365200  0.60539100  0.12103800  1
+  Fe2+  Fe5  1  0.60476100  0.32202000  0.12076300  1
+  Fe2+  Fe6  1  0.39480700  0.92661700  0.87882800  1
+  Fe2+  Fe7  1  0.67874500  0.39473200  0.87893400  1
+  Fe2+  Fe8  1  0.60534000  0.32091700  0.37932700  1
+  Fe2+  Fe9  1  0.32128100  0.07301300  0.12099300  1
+  Fe2+  Fe10  1  0.92696500  0.67850300  0.87897600  1
+  Fe2+  Fe11  1  0.32182300  0.07346900  0.37893100  1
+  S2-  S12  1  0.65984500  0.00221900  0.24971600  1
+  S2-  S13  1  0.33359300  0.33312500  0.97458900  1
+  S2-  S14  1  0.66645200  0.66661900  0.47411500  1
+  S2-  S15  1  0.00271300  0.33778400  0.24996600  1
+  S2-  S16  1  0.33725200  0.65998300  0.25014300  1
+  S2-  S17  1  0.99655400  0.34070800  0.75006700  1
+  S2-  S18  1  0.00022800  0.99977300  0.99984600  1
+  S2-  S19  1  0.33318000  0.33358500  0.52537300  1
+  S2-  S20  1  0.66685700  0.66647200  0.02590600  1
+  S2-  S21  1  0.66268300  0.99666200  0.74999800  1
+  S2-  S22  1  0.99970300  0.00001700  0.50003500  1
+  S2-  S23  1  0.34073900  0.66277200  0.75002200  1

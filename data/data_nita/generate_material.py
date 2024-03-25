@@ -16,7 +16,7 @@ material_id = "mp-1522"
 structure = mpr.get_structure_by_material_id(material_id)
 
 # Create an expanded unit cell (2x2x2)
-expanded_structure = structure * [5, 5, 5]
+expanded_structure = structure * [2, 2, 2]
 
 # Create a dictionary with the material ID and structure data
 material_data = {
@@ -25,6 +25,6 @@ material_data = {
 }
 
 # Save the structure and material ID to a JSON file with pretty formatting
-with open("expanded_structure-mp-1522_5x5.json", "w") as json_file:
+with open("expanded_structure-mp-1522_2x2.json", "w") as json_file:
     json.dump(material_data, json_file, indent=4)
 

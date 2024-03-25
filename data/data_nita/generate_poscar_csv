@@ -1,0 +1,58 @@
+import pandas as pd
+import json
+
+# Baca data dari file POSCAR
+with open('POSCAR_VFe_8_33%.vasp', 'r') as poscar_file:
+    poscar_data = poscar_file.readlines()
+
+# Ekstrak data yang diperlukan dari POSCAR
+material_id = poscar_data[0].strip()
+scaling_factor = float(poscar_data[1])
+lattice_matrix = [list(map(float, line.split())) for line in poscar_data[2:5]]
+element_symbols = poscar_data[5].split()
+atom_counts = [int(count) for count in poscar_data[6].split()]
+
+# Menentukan jumlah total atom
+total_atoms = sum(atom_counts)
+
+# Mencari indeks awal dari bagian posisi atom dalam file POSCAR
+start_index = 8  # Indeks baris setelah baris jumlah atom per simbol
+
+# Menyimpan posisi atom dalam list positions
+positions = []
+for i in range(total_atoms):
+    line = poscar_data[start_index + i].split()[:3]  # Hanya menggunakan tiga koordinat pertama
+    positions.append([float(coord) for coord in line])
+
+# Ambil informasi tentang lattice
+lattice_pbc = [True, True, True]  # Asumsikan selalu menggunakan periode berulang (periodic boundary conditions)
+
+# Generate array energi dan inisialisasi PHDOS dan PDOS
+energies = [float(i) for i in range(0, 1001, 20)]  # Generate energy array
+phdos = [0.0 for _ in range(len(energies))]  # PHDOS filled with 0.0
+pdos = {element_symbol: [0.0 for _ in range(len(energies))] for element_symbol in element_symbols}  # PDOS for each element filled with 0.0
+
+# Persiapkan data dalam bentuk dictionary untuk DataFrame
+data_dict = {
+    'material_id': material_id,
+    'scaling_factor': scaling_factor,
+    'structure': {
+        'numbers': atom_counts,
+        'positions': positions,
+        'cell': lattice_matrix,
+        'pbc': lattice_pbc
+    },
+    'energies': energies,  # Tambahkan array energi ke dalam DataFrame
+    'phdos': phdos,  # Tambahkan PHDOS ke dalam DataFrame
+}
+
+# Tambahkan kolom untuk setiap elemen PDOS
+for element_symbol in element_symbols:
+    pdos_column_name = f"pdos_{element_symbol}"
+    data_dict[pdos_column_name] = pdos[element_symbol]
+
+# Buat DataFrame baru
+df = pd.DataFrame([data_dict])
+
+# Simpan DataFrame ke dalam file CSV
+df.to_csv('output_mp-2779_vac_DFT.csv', index=False)

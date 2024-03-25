@@ -3,7 +3,7 @@ import json
 from periodictable import elements
 
 # Baca data dari file JSON
-with open('expanded_structure-mp-1522_5x5.json', 'r') as json_file:
+with open('expanded_structure-mp-1522_2x2.json', 'r') as json_file:
     data = json.load(json_file)
 
 # Ekstrak data yang diperlukan
@@ -27,4 +27,4 @@ df = pd.DataFrame({
 })
 
 # Simpan DataFrame ke dalam file CSV
-df.to_csv('output_mp-1522_5x5.csv', index=False)
+df.to_csv('output_mp-1522_2x2.csv', index=False)
