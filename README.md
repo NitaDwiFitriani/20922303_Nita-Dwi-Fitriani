@@ -1,4 +1,3 @@
-**Project: E3NN Tutorial for Materials Research Society Fall Meeting 2021**
 
 **Author / Contributors:**
 - First Author: [@zhantaochen](https://github.com/zhantaochen)
@@ -23,4 +22,6 @@
 **History of Progress / Bugs Fixed:** 
 - Unable to perform unit cell upgrades and no vacancy dopant experiments.
 
+
+if you want to do development like I did, you can contact 
 For any questions, please reach out to Zhantao at [zhantao@mit.edu](mailto:zhantao@mit.edu).
