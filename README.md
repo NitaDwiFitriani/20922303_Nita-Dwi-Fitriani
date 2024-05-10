@@ -14,7 +14,32 @@
 - This repository contains the E3NN tutorial for the Materials Research Society Fall Meeting 2021. It accompanies the paper available at [Wiley](https://onlinelibrary.wiley.com/doi/10.1002/advs.202004214) or [arXiv](https://arxiv.org/pdf/2009.05163.pdf).
   
 **Timeline and Stages:** 
-- 10 April: Implementation Stage
+Nama : Nita Dwi Fitriani
+Nim :  20922303
+
+The following advancements are in progress and have started to be finalized, but on the problem part, I am still looking for ways to get more accurate results at this point. 
+
+| Elements         | Progress    | Date to Accomplish |
+|------------------|-------------|--------------------|
+| README.md        | Completed   | March 1            |
+| LICENSE          | Completed   | March 24           |
+| Data Preparation | Completed | April 3            |
+| Main Program     | In progress | April 7            |
+| Analysis of results    | In progress | Mei 8            |
+
+| Stage              | Progress   | Date to Accomplish | Description                                                                                                                        | Problem                                                                                                                               |
+|--------------------|------------|---------------------|------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
+| Planning Stage     | Completed  | March 6             | Planning the project and selecting the development                                                                               | Learn Material Science Especially Phonon DOS and Model E3NN                                                                     |
+| Design Stage       | Completed  | March 13            | Designing software architecture                                                                                                    | Creating architecture in accordance with the methods used with literacy understanding from journals                               |
+| Implementation Stage | Completed | April 17            | Beginning/Continuing implementation of features                                                                                   | Prepare for testing orthorhombic FeS new material with Multi-dimensional data                                                      |
+| Sprint 1 Review    | Completed  | March 27            | Reviewing progress after Sprint 1                                                                                                  | Difficulty in preparing complex data with tools and ensuring data suitability through visualization and validation with VESTA, Existence of multidimensional data requiring preprocessing |
+| Sprint 2 Planning  | Completed  | April 10            | Planning Sprint 2 based on feedback                                                                                                | Testing Supercell material with TiO2 doping Al, Cu, Mo, and W, observe the results, and try to vacancy data                     |
+| Testing Stage      | In progress| May 1               | Initiating/further testing                                                                                                         | Doping with Al, Cu, Mo, and W in TiO2 improves the DOS phonon graph because they affect the structure and interactions in the TiO2 crystal, causing an increase in phonon energy at some energy points. This indicates a significant change in the vibrational properties of TiO2 that is potentially important in technological applications. Vacancy in the FeS material does not show a significant change in the graph, the vacancy result of 8% with perfect material still produces the same prediction, it needs to be reviewed |
+| Sprint 2 Review    | Not started| April 24            | Reviewing progress after Sprint 2                                                                                                  | None                                                                                                                                 |
+| Sprint 3 Planning  | Not started| May 8               | Planning Sprint 3 based on feedback                                                                                                | None                                                                                                                                 |
+| Sprint 3 Review    | Not started| May 22              | Reviewing progress after Sprint 3                                                                                                  | None                                                                                                                                 |
+| Finalization       | Not started| May 29              | Completing documentation and preparing final report                                                                                | None                                                                                                                                 |
+
 
 **Current Bugs / Progress:** 
 - Vacancy dopant incomplete
