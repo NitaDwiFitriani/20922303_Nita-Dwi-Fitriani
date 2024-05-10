@@ -14,8 +14,6 @@
 - This repository contains the E3NN tutorial for the Materials Research Society Fall Meeting 2021. It accompanies the paper available at [Wiley](https://onlinelibrary.wiley.com/doi/10.1002/advs.202004214) or [arXiv](https://arxiv.org/pdf/2009.05163.pdf).
   
 **Timeline and Stages:** 
-Nama : Nita Dwi Fitriani
-Nim :  20922303
 
 The following advancements are in progress and have started to be finalized, but on the problem part, I am still looking for ways to get more accurate results at this point. 
 
